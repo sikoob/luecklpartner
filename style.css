@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Futura Md";
-    src: url("./fonts/FutuMd.ttf") format("truetype");
+    src: url("./fonts/FuturaMediumBT.ttf") format("truetype");
 }
 
 
@@ -18,7 +18,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .whole_page {
@@ -35,7 +34,6 @@
     position: absolute;
     left: 10rem;
     margin-top: 5rem;
-    
 }
 
 .header {
@@ -43,7 +41,7 @@
     flex-direction: column;
     background-color: #003646;
     width: 20rem;
-    height: 4.5rem;
+    height: auto;
 }
 
 .header__headline {
@@ -59,6 +57,7 @@
     text-transform: uppercase;
     letter-spacing: .7px;
     margin-right: 0.1rem;
+    cursor: pointer;
 }
 
 .header2 {
@@ -67,6 +66,7 @@
     text-shadow: -1px -1px 0 #FFF200, 1px -1px 0 #FFF200, -1px 1px 0 #FFF200, 1px 1px 0 #FFF200;
     text-transform: uppercase;
     letter-spacing: .7px;
+    cursor: pointer;
 }
 
 .header__paragraphs {
@@ -80,7 +80,8 @@
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0 1rem 0 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .content__news:hover {
@@ -97,6 +98,7 @@
     background-color: #003646;
     font-family: "Futura Md";
     text-align: right;
+    cursor: default;
 }
 
 .news{
@@ -114,31 +116,50 @@
     background-color: #003646;
     font-family: "Futura Md";
     padding-bottom: 1rem;
+    cursor: default;
+}
+
+.contact__pointer {
+    cursor: pointer;
 }
 
 .contact__name{
     display: flex;
     flex-direction: row;
     height: 1rem;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 0.75rem 1rem;
 }
 
 .special_prefix{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 0.5rem;
     color: #FFF200;
     margin-right: 0.3rem;
     font-size: 0.5rem;
+    font-weight: 700;
 }
 
 .name__paragraph {
     color:#FFF200;
+    font-weight: 700;
 }
 
 .contact__paragraph {
     color:#FFF200;
     margin: 0.3rem 1rem 0 1rem;
+    font-weight: 700;
+    text-decoration: none;
 
+}
+
+.end__contact {
+    margin-bottom: 0.75rem;
+}
+
+.image{
+    width: 20rem;
+    height: auto;
+    background-size:contain;
 }
 
 .content__focus {
@@ -150,12 +171,20 @@
     position: absolute;
     bottom: 10rem;
     right: 10rem;
+    
 }
 
 
-.whole_content {
+.whole__content {
     font-family: "Corbel";
+    font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.whole__content:hover {
+    color: grey;
 }
 
 
