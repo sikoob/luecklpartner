@@ -163,7 +163,6 @@
 }
 
 .content__focus {
-    z-index:3;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
