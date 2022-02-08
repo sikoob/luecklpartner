@@ -1,22 +1,200 @@
+@font-face {
+    font-family: "Corbel";
+    src: url("./fonts/CORBELB.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura XBlk";
+    src: url("./fonts/FuturaXBlkBT.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura Md";
+    src: url("./fonts/FutuMd.ttf") format("truetype");
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #002E28;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    font-size: 4rem;
-    text-align: center;
-    color: white;
-    margin-top: 2rem;
+.whole_page {
+    background-color: white;
+    min-width: 100%;
+    min-height: 100%;
 }
 
-.background {
-    background-image: url('./logo.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 50rem;
-    min-width: 100%;
+.focus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10rem;
+    margin-top: 5rem;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #003646;
+    width: 20rem;
+    height: 4.5rem;
+}
+
+.header__headline {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+
+.header1 {
+    font-family: "Futura xBlk";
+    color: #FFF200;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    margin-right: 0.1rem;
+}
+
+.header2 {
+    font-family: "Futura xBlk";
+    color: #003646;
+    text-shadow: -1px -1px 0 #FFF200, 1px -1px 0 #FFF200, -1px 1px 0 #FFF200, 1px 1px 0 #FFF200;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+
+.header__paragraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__content {
+    font-family: "Futura xBlk";
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 1rem 0 1rem;
+}
+
+.content__news:hover {
+    color:#FFF200;
+}
+
+.content__contact:hover {
+    color:#FFF200;
+}
+
+.news__content{
+    width: 20rem;
+    height: auto;
+    background-color: #003646;
+    font-family: "Futura Md";
+    text-align: right;
+}
+
+.news{
+    color: #FFF200;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 20rem;
+    height: auto;
+    background-color: #003646;
+    font-family: "Futura Md";
+    padding-bottom: 1rem;
+}
+
+.contact__name{
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.special_prefix{
+    position: absolute;
+    bottom: 0;
+    color: #FFF200;
+    margin-right: 0.3rem;
+    font-size: 0.5rem;
+}
+
+.name__paragraph {
+    color:#FFF200;
+}
+
+.contact__paragraph {
+    color:#FFF200;
+    margin: 0.3rem 1rem 0 1rem;
+
+}
+
+.content__focus {
+    z-index:3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+}
+
+
+.whole_content {
+    font-family: "Corbel";
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 56.25em) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    img {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 40.125em) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    img {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 28.125em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 20em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 17rem;
+    }
 }
