@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #002E28;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+.background {
+    background-image: url('./logo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 50rem;
+    min-width: 100%;
+}
