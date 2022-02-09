@@ -16,10 +16,22 @@ jQuery(document).ready(function($) {
         }
     );
 
+    $(".content__contact").click(
+        function() {
+            $(".contact__info").toggle();
+        }
+    );
+
     $(".content__news").hover(
         function() {
             $(".news__content").show();
             $(".contact__info").hide();
+        }
+    );
+
+    $(".content__news").click(
+        function() {
+            $(".news__content").toggle();
         }
     );
 
@@ -31,11 +43,23 @@ jQuery(document).ready(function($) {
         }
     );
 
+    $(".whole__content.content__architecutre").click(
+        function() {
+            $(".image__architecture").toggle();
+        }
+    );
+
     $(".whole__content.content__design").hover(
         function() {
             $(".image__design").show();
         },function() {
             $(".image__design").hide();
+        }
+    );
+
+    $(".whole__content.content__design").click(
+        function() {
+            $(".image__design").toggle();
         }
     );
 
@@ -47,11 +71,24 @@ jQuery(document).ready(function($) {
         }
     );
 
+    $(".whole__content.content__light").click(
+        function() {
+            $(".image__light").toggle();
+        }
+    );
+
+
     $(".whole__content.content__gastro").hover(
         function() {
             $(".image__gastro").show();
         },function() {
             $(".image__gastro").hide();
+        }
+    );
+
+    $(".whole__content.content__gastro").click(
+        function() {
+            $(".image__gastro").toggle();
         }
     );
 
