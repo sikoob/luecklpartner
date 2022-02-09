@@ -15,6 +15,9 @@
 
 :root{
     --width-focus: 45rem;
+    --color_black: black;
+    --color_white: white;
+    --color_yellow: #FFF200;
 }
 
 * {
@@ -24,7 +27,7 @@
 }
 
 .whole_page {
-    background-color: white;
+    background-color: var(--color_white);
     min-width: 100%;
     min-height: 100%;
 }
@@ -42,7 +45,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background-color: #003646;
+    background-color: var(--color_black);
     width: var(--width-focus);
     height: auto;
 }
@@ -56,19 +59,19 @@
 
 .header1 {
     font-family: "Futura xBlk";
-    color: #FFF200;
+    color: var(--color_yellow);
     font-size: 4.5rem;
     text-transform: uppercase;
     letter-spacing: .7px;
-    margin: 0.1rem;
+    margin-right: 0.1rem;
     cursor: pointer;
 }
 
 .header2 {
     font-family: "Futura xBlk";
-    color: #003646;
+    color: var(--color_black);
     font-size: 4.5rem;
-    text-shadow: -1px -1px 0 #FFF200, 1px -1px 0 #FFF200, -1px 1px 0 #FFF200, 1px 1px 0 #FFF200;
+    text-shadow: -0.5px -1px 0 var(--color_yellow), 0.5px -1px 0 var(--color_yellow), -0.5px 1px 0 var(--color_yellow), 0.5px 1px 0 var(--color_yellow);
     text-transform: uppercase;
     letter-spacing: .7px;
     cursor: pointer;
@@ -78,38 +81,41 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .header__content {
     font-family: "Futura xBlk";
-    color: white;
+    color: var(--color_white);
     font-size: 2.5rem;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0.5rem 1rem 0.5rem 1rem;
     cursor: pointer;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .content__news:hover {
-    color:#FFF200;
+    color:var(--color_yellow);
 }
 
 .content__contact:hover {
-    color:#FFF200;
+    color:var(--color_yellow);
 }
 
 .news__content{
     width: var(--width-focus);
-    height: auto;
-    background-color: #003646;
+    height: 24.6rem;
+    background-color: var(--color_black);
     font-family: "Futura Md";
     text-align: right;
     cursor: default;
+    overflow: auto;
 }
 
 .news{
-    color: #FFF200;
-    font-size: 1.7rem;
+    color: var(--color_yellow);
+    font-size: 1.75rem;
     margin: 1rem 1rem 1rem 1rem;
     line-height: 2.5rem;
 }
@@ -121,7 +127,7 @@
     justify-content: center;
     width: var(--width-focus);
     height: auto;
-    background-color: #003646;
+    background-color: var(--color_black);
     font-family: "Futura Md";
     padding-bottom: 1rem;
     cursor: default;
@@ -135,22 +141,22 @@
 
 .special_prefix{
     position: relative;
-    top: 1.2rem;
-    color: #FFF200;
+    top: 1rem;
+    color: var(--color_yellow);
     margin-right: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .name__paragraph {
-    color:#FFF200;
+    color:var(--color_yellow);
     font-size: 2rem;
     font-weight: 700;
 }
 
 .contact__paragraph {
-    color:#FFF200;
-    margin: 0.5rem 1rem 0 1rem;
+    color:var(--color_yellow);
+    margin: 0.1rem 1rem 0 1rem;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
@@ -174,7 +180,9 @@
 .image{
     width: var(--width-focus);
     height: auto;
-    background-size:contain;
+    background-size: contain;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .content__focus {
@@ -188,13 +196,12 @@
     
 }
 
-
 .whole__content {
     font-family: "Corbel";
     font-size: 2.3rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     cursor: pointer;
 }
 
@@ -203,42 +210,204 @@
 }
 
 
-@media (max-width: 56.25em) {
-    h1 {
-        font-size: 3.5rem;
+@media (max-width: 63.75em) {
+    :root{
+        --width-focus: 30rem;
     }
 
-    img {
-        width: 30rem;
+    .focus{
+        left: 4rem;
+        margin-top: 2rem;
     }
-}
 
-@media (max-width: 40.125em) {
-    h1 {
+    .header1{
         font-size: 3rem;
     }
 
-    img {
-        width: 22rem;
+    .header2{
+        font-size: 3rem;
     }
-}
 
-@media (max-width: 28.125em) {
-    h1 {
+    .header__content{
         font-size: 2rem;
     }
 
-    img {
-        width: 20rem;
+    .news__content{
+        height: 17rem;
+    }
+
+    .news{
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+
+    .content__focus{
+        bottom: 5rem;
+        right: 5rem;
+    }
+
+    .whole__content{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 48em) {
+    .content__focus{
+        bottom: 1.5rem;
+        right: 3rem;
+    }
+
+    .whole__content{
+        font-size: 1.5rem;
+    }
+
+    .special_prefix{
+        font-size: 0.75rem;
+    }
+
+    .name__paragraph{
+        font-size: 1.75rem;
+    }
+
+    .contact__paragraph{
+        font-size: 1.75rem;
+    }
+
+}
+
+@media (max-width: 40.125em) {
+    :root{
+        --width-focus: 24rem;
+    }
+
+    .focus{
+        left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .header1{
+        font-size: 2.3rem;
+    }
+
+    .header2{
+        font-size: 2.3rem;
+    }
+
+    .header__content{
+        font-size: 1.7rem;
+    }
+
+    .news__content{
+        height: 18rem;
+    }
+
+    .news{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .special_prefix{
+        top: 0.7rem;
+    }
+
+    .name__paragraph{
+        font-size: 1.5rem;
+    }
+
+    .contact__paragraph{
+        font-size: 1.5rem;
+    }
+
+    .contact_address{
+        margin: 2rem 0 2.5rem 0;
+    }
+
+    .content__focus{
+        bottom: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .whole__content{
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 20em) {
-    h1 {
-        font-size: 2rem;
+    :root{
+        --width-focus: 18rem;
     }
 
-    img {
-        width: 17rem;
+    .focus{
+        left: 1rem;
+    }
+
+    .header1{
+        font-size: 1.8rem;
+    }
+
+    .header2{
+        font-size: 1.8rem;
+    }
+
+    .header__content{
+        font-size: 1.4rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .news__content{
+        height: 10rem;
+    }
+
+    .news{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .contact__info {
+        height: 10rem;
+        overflow: scroll;
+    }
+
+    .contact_name {
+        height: auto;
+        margin: 0;
+    }
+
+    .special_prefix{
+        top: 0.6rem;
+        font-size: 0.6rem;
+    }
+
+    .name__paragraph{
+        font-size: 1.2rem;
+    }
+
+    .contact__paragraph{
+        font-size: 1.2rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .contact_address{
+        margin: 0.3rem 0 0.3rem 0;
+    }
+
+    .contact__web{
+        margin: 0;
+    }
+
+    .image{
+        position: relative;
+        z-index: 8;
+    }
+
+    .content__focus{
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .whole__content{
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
     }
 }
