@@ -105,7 +105,7 @@
 
 .news__content{
     width: var(--width-focus);
-    height: 24.6rem;
+    height: 22rem;
     background-color: var(--color_black);
     font-family: "Futura Md";
     text-align: right;
