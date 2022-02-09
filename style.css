@@ -13,6 +13,9 @@
     src: url("./fonts/FuturaMediumBT.ttf") format("truetype");
 }
 
+:root{
+    --width-focus: 45rem;
+}
 
 * {
     margin: 0;
@@ -40,7 +43,7 @@
     display: flex;
     flex-direction: column;
     background-color: #003646;
-    width: 20rem;
+    width: var(--width-focus);
     height: auto;
 }
 
@@ -54,15 +57,17 @@
 .header1 {
     font-family: "Futura xBlk";
     color: #FFF200;
+    font-size: 4.5rem;
     text-transform: uppercase;
     letter-spacing: .7px;
-    margin-right: 0.1rem;
+    margin: 0.1rem;
     cursor: pointer;
 }
 
 .header2 {
     font-family: "Futura xBlk";
     color: #003646;
+    font-size: 4.5rem;
     text-shadow: -1px -1px 0 #FFF200, 1px -1px 0 #FFF200, -1px 1px 0 #FFF200, 1px 1px 0 #FFF200;
     text-transform: uppercase;
     letter-spacing: .7px;
@@ -78,6 +83,7 @@
 .header__content {
     font-family: "Futura xBlk";
     color: white;
+    font-size: 2.5rem;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0.5rem 1rem 0.5rem 1rem;
@@ -93,7 +99,7 @@
 }
 
 .news__content{
-    width: 20rem;
+    width: var(--width-focus);
     height: auto;
     background-color: #003646;
     font-family: "Futura Md";
@@ -103,7 +109,9 @@
 
 .news{
     color: #FFF200;
+    font-size: 1.7rem;
     margin: 1rem 1rem 1rem 1rem;
+    line-height: 2.5rem;
 }
 
 .contact__info {
@@ -111,53 +119,60 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    width: 20rem;
+    width: var(--width-focus);
     height: auto;
     background-color: #003646;
     font-family: "Futura Md";
     padding-bottom: 1rem;
     cursor: default;
 }
-
-.contact__pointer {
-    cursor: pointer;
-}
-
 .contact__name{
     display: flex;
     flex-direction: row;
     height: 1rem;
-    margin: 1rem 1rem 0.75rem 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 
 .special_prefix{
     position: relative;
-    top: 0.5rem;
+    top: 1.2rem;
     color: #FFF200;
-    margin-right: 0.3rem;
-    font-size: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
 .name__paragraph {
     color:#FFF200;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .contact__paragraph {
     color:#FFF200;
-    margin: 0.3rem 1rem 0 1rem;
+    margin: 0.5rem 1rem 0 1rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-
 }
 
-.end__contact {
-    margin-bottom: 0.75rem;
+.contact__address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.contact__web {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: -1rem 0 0 0;
 }
 
 .image{
-    width: 20rem;
+    width: var(--width-focus);
     height: auto;
     background-size:contain;
 }
@@ -176,6 +191,7 @@
 
 .whole__content {
     font-family: "Corbel";
+    font-size: 2.3rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
