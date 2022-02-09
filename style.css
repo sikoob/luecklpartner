@@ -324,8 +324,8 @@
     }
 
     .content__focus{
-        bottom: 2.5rem;
-        right: 2.5rem;
+        bottom: 1rem;
+        right: 1rem;
     }
 
     .whole__content{
@@ -333,9 +333,9 @@
     }
 }
 
-@media (max-width: 20em) {
+@media (max-width: 22.5em) {
     :root{
-        --width-focus: 18rem;
+        --width-focus: 20rem;
     }
 
     .focus{
@@ -343,11 +343,11 @@
     }
 
     .header1{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .header2{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .header__content{
@@ -356,22 +356,12 @@
     }
 
     .news__content{
-        height: 10rem;
+        height: 16.5rem;
     }
 
     .news{
         font-size: 1.2rem;
         line-height: 2rem;
-    }
-
-    .contact__info {
-        height: 10rem;
-        overflow: scroll;
-    }
-
-    .contact_name {
-        height: auto;
-        margin: 0;
     }
 
     .special_prefix{
@@ -385,15 +375,7 @@
 
     .contact__paragraph{
         font-size: 1.2rem;
-        margin: 0 1rem 0 1rem;
-    }
-
-    .contact_address{
-        margin: 0.3rem 0 0.3rem 0;
-    }
-
-    .contact__web{
-        margin: 0;
+        margin-bottom: 0.1rem;
     }
 
     .image{
@@ -407,7 +389,7 @@
     }
 
     .whole__content{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         margin-bottom: 0.3rem;
     }
 }
