@@ -113,11 +113,23 @@
     overflow: auto;
 }
 
+.news__header{
+    color: var(--color_yellow);
+    font-size: 1.75rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
 .news{
     color: var(--color_yellow);
     font-size: 1.75rem;
     margin: 1rem 1rem 1rem 1rem;
     line-height: 2.5rem;
+}
+
+.news__separator{
+    border-color: var(--color_yellow);
+    width: 50%;
+    margin: 1rem auto 0.5rem auto;
 }
 
 .contact__info {
@@ -236,6 +248,10 @@
         height: 17rem;
     }
 
+    .news__header{
+        font-size: 1.3rem;
+    }
+
     .news{
         font-size: 1.3rem;
         line-height: 2.2rem;
@@ -339,7 +355,7 @@
     }
 
     .focus{
-        left: 1rem;
+        left: 0.3rem;
     }
 
     .header1{
