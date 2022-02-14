@@ -203,26 +203,49 @@
     align-items: flex-end;
     justify-content: center;
     position: absolute;
-    bottom: 10rem;
-    right: 10rem;
+    bottom: 20rem;
+    right: 15rem;
     
 }
 
 .whole__content {
     font-family: "Corbel";
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 1rem;
     cursor: pointer;
+    margin-bottom: -0.75rem;
 }
 
 .whole__content:hover {
     color: grey;
 }
 
+@media (max-width: 80em) {
+    :root{
+        --width-focus: 43rem;
+    }
 
-@media (max-width: 63.75em) {
+    .whole_page{
+        overflow: scroll;
+    }
+
+    .focus{
+        left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .content__focus{
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .whole__content{
+        margin-bottom: -0.95rem;
+    }
+}
+
+@media (max-width: 64em) {
     :root{
         --width-focus: 30rem;
     }
@@ -258,14 +281,22 @@
     }
 
     .content__focus{
-        bottom: 5rem;
-        right: 5rem;
+        bottom: 7rem;
+        right: 1rem;
     }
 
     .whole__content{
         font-size: 1.7rem;
+        margin-bottom: -0.6rem;
     }
 
+}
+
+@media (max-width: 57em) {
+    .content__focus{
+        bottom: 40rem;
+        right: 3rem;
+    }
 }
 
 @media (max-width: 48em) {
@@ -288,6 +319,11 @@
 
     .contact__paragraph{
         font-size: 1.75rem;
+    }
+
+    .content__focus{
+        bottom: 20rem;
+        right: 3rem;
     }
 
 }
@@ -340,12 +376,23 @@
     }
 
     .content__focus{
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 10rem;
+        right: 3rem;
     }
 
     .whole__content{
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 26em) {
+    .focus{
+        left: 1rem;
+    }
+
+    .content__focus{
+        bottom: 15rem;
+        right: 2rem;
     }
 }
 
@@ -399,13 +446,67 @@
         z-index: 8;
     }
 
+    .whole__content{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 18em) {
+    :root{
+        --width-focus: 17rem;
+    }
+
+    .focus{
+        left: 0.32em;
+    }
+
+    .header1{
+        font-size: 1.6rem;
+    }
+
+    .header2{
+        font-size: 1.6rem;
+    }
+
+    .header__content{
+        font-size: 1.3rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .news__content{
+        height: 15.5rem;
+    }
+
+    .news{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .special_prefix{
+        top: 0.4rem;
+        font-size: 0.6rem;
+    }
+
+    .name__paragraph{
+        font-size: 1rem;
+    }
+
+    .contact__paragraph{
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .image{
+        position: relative;
+        z-index: 8;
+    }
+
     .content__focus{
-        bottom: 3rem;
+        bottom: 10rem;
         right: 1rem;
     }
 
     .whole__content{
-        font-size: 1.4rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
     }
 }
