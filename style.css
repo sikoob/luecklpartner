@@ -18,6 +18,7 @@
     --color_black: black;
     --color_white: white;
     --color_yellow: #FFF200;
+    --color_blue: #00779b;
 }
 
 * {
@@ -86,9 +87,10 @@
 }
 
 .header__content {
-    font-family: "Futura xBlk";
+    font-family: "Futura Md";
     color: var(--color_white);
     font-size: 2.5rem;
+    font-weight: 100;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -172,6 +174,11 @@
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+.contact__web-address {
+    text-decoration: underline;
+    color: var(--color_blue);
 }
 
 .contact__address{
@@ -347,7 +354,7 @@
     }
 
     .header__content{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     .news__content{
@@ -414,8 +421,8 @@
     }
 
     .header__content{
-        font-size: 1.4rem;
-        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        font-size: 1.2rem;
+        margin: 0.5rem 0.5rem 0 0.5rem;
     }
 
     .news__content{
@@ -441,9 +448,9 @@
         margin-bottom: 0.1rem;
     }
 
-    .image{
-        position: relative;
-        z-index: 8;
+    .content__focus{
+        bottom: 10rem;
+        right: 1rem;
     }
 
     .whole__content{
@@ -499,11 +506,6 @@
     .image{
         position: relative;
         z-index: 8;
-    }
-
-    .content__focus{
-        bottom: 10rem;
-        right: 1rem;
     }
 
     .whole__content{
