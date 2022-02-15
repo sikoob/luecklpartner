@@ -155,23 +155,23 @@
 
 .special_prefix{
     position: relative;
-    top: 1rem;
+    top: 0.9rem;
     color: var(--color_yellow);
     margin-right: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
 .name__paragraph {
     color:var(--color_yellow);
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
 .contact__paragraph {
     color:var(--color_yellow);
-    margin: 0.1rem 1rem 0 1rem;
-    font-size: 2rem;
+    margin: 0.1rem 1rem 0.25rem 1rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -185,7 +185,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 2.5rem 0 2.5rem 0;
+    margin: 3rem 0 3rem 0;
 }
 
 .contact__web {
@@ -212,7 +212,7 @@
     position: absolute;
     bottom: 20rem;
     right: 15rem;
-    
+    margin-top: 1rem;
 }
 
 .whole__content {
@@ -221,7 +221,7 @@
     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom: -0.75rem;
+    margin-bottom: -1.25rem;
 }
 
 .whole__content:hover {
@@ -245,10 +245,6 @@
     .content__focus{
         bottom: 1rem;
         right: 1rem;
-    }
-
-    .whole__content{
-        margin-bottom: -0.95rem;
     }
 }
 
@@ -293,16 +289,56 @@
     }
 
     .whole__content{
-        font-size: 1.7rem;
-        margin-bottom: -0.6rem;
+        font-size: 1.9rem;
+        margin-bottom: -0.75rem;
     }
 
 }
 
 @media (max-width: 57em) {
+    .news__content{
+        height: 19rem;
+    }
+
+    .special_prefix{
+        font-size: 1rem;
+        top: 1rem;
+    }
+    
+    .name__paragraph {
+        font-size: 2rem;
+    }
+    
+    .contact__paragraph {
+        font-size: 2rem;
+    }
+
+    .contact__address{
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .content__focus{
+        bottom: 30rem;
+        right: 3rem;
+    }
+}
+
+@media screen and (max-width: 57em) and (min-height: 87em) {
+    .content__focus{
+        bottom: 45rem;
+        right: 3rem;
+    }
+}
+
+@media (max-width: 50em) {
+    .whole__content{
+        margin-bottom: -0.85rem;
+    }
+}
+
+@media screen and (max-width: 50em) and (min-height: 80em) {
     .content__focus{
         bottom: 40rem;
-        right: 3rem;
     }
 }
 
@@ -310,10 +346,6 @@
     .content__focus{
         bottom: 1.5rem;
         right: 3rem;
-    }
-
-    .whole__content{
-        font-size: 1.5rem;
     }
 
     .special_prefix{
@@ -332,7 +364,6 @@
         bottom: 20rem;
         right: 3rem;
     }
-
 }
 
 @media (max-width: 40.125em) {
@@ -389,17 +420,56 @@
 
     .whole__content{
         font-size: 1.5rem;
+        margin-bottom: -0.6rem;
     }
 }
 
 @media (max-width: 26em) {
+    :root{
+        --width-focus: 21rem;
+    } 
+
     .focus{
         left: 1rem;
     }
 
+    .header1{
+        font-size: 2.1rem;
+    }
+
+    .header2{
+        font-size: 2.1rem;
+    }
+
+    .header__content{
+        font-size: 1.4rem;
+    }
+
+    .news{
+        font-size: 1.15rem;
+        line-height: 2rem;
+    }
+
+    .special_prefix{
+        top: 0.7rem;
+    }
+
+    .name__paragraph{
+        font-size: 1.4rem;
+    }
+
+    .contact__paragraph{
+        font-size: 1.4rem;
+    }
+
+
     .content__focus{
-        bottom: 15rem;
+        bottom: 10rem;
         right: 2rem;
+    }
+
+    .whole__content{
+        margin-bottom: -0.6rem;
     }
 }
 
@@ -458,7 +528,7 @@
     }
 }
 
-@media (max-width: 18em) {
+@media (max-width: 20em) {
     :root{
         --width-focus: 17rem;
     }
@@ -508,7 +578,33 @@
         z-index: 8;
     }
 
+    .content__focus{
+        bottom: 2rem;
+        right: 1rem;
+    }
+
     .whole__content{
         font-size: 1.3rem;
+        margin-bottom: -0.65rem;
+    }
+}
+
+@media screen and (max-width: 17.5em) and (min-height: 40em) {
+    :root{
+        --width-focus: 16.5rem;
+    }
+
+    .focus{
+        left: 0.3em;
+    }
+
+    .content__focus{
+        bottom: 10rem;
+        right: 1rem;
+    }
+
+    .whole__content{
+        font-size: 1.3rem;
+        margin-bottom: -0.6rem;
     }
 }
