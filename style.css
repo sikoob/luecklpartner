@@ -178,7 +178,7 @@
 
 .contact__web-address {
     text-decoration: underline;
-    color: var(--color_blue);
+    /*color: var(--color_blue);*/
 }
 
 .contact__address{
